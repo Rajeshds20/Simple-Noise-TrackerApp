@@ -19,3 +19,157 @@
         height: 100px;
     }
 }
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.head {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.info-section {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.noise-level {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.noise-level-value {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.high {
+    color: red;
+}
+
+.normal {
+    color: green;
+}
+
+.threshold-label {
+    font-size: 18px;
+}
+
+.threshold-input {
+    width: 50px;
+    font-size: 16px;
+    padding: 5px;
+    margin-left: 10px;
+}
+
+.export-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #2196f3;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.export-button:hover {
+    background-color: #0c87ce;
+}
+
+.canvas-section {
+    position: relative;
+}
+
+.wave-canvas-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.wave-canvas {
+    width: 100%;
+    max-width: 600px;
+    height: 150px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 0 auto;
+}
+
+.alert-message {
+    font-size: 24px;
+    color: red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+
+    .head {
+        font-size: 24px;
+    }
+
+    .noise-level-value {
+        font-size: 20px;
+    }
+
+    .threshold-label {
+        font-size: 16px;
+    }
+
+    .threshold-input {
+        width: 40px;
+        font-size: 14px;
+        padding: 3px;
+        margin-left: 5px;
+    }
+
+    .export-button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .wave-canvas {
+        height: 120px;
+    }
+
+    .alert-message {
+        font-size: 20px;
+    }
+}
+
+.alert-section {
+    margin-bottom: 20px;
+}
+
+.alert {
+    font-size: 24px;
+    color: red;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.show {
+    opacity: 1;
+}
+
+.hide {
+    opacity: 0;
+}
+
+@media (max-width: 600px) {
+    .alert {
+        font-size: 20px;
+    }
+}
